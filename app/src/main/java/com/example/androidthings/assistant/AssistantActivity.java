@@ -178,12 +178,12 @@ public class AssistantActivity extends Activity implements Button.OnButtonEventL
                     @Override
                     public void onAudioSample(ByteBuffer audioSample) {
                         if (mLed != null) {
-                            try {
-                                mDac.setSdMode(Max98357A.SD_MODE_SHUTDOWN);
-                                mLed.setValue(false);
-                            } catch (IOException e) {
-                                Log.e(TAG, "error disabling DAC", e);
-                            }
+//                            try {
+//                                mDac.setSdMode(Max98357A.SD_MODE_SHUTDOWN);
+//                                mLed.setValue(false);
+//                            } catch (IOException e) {
+//                                Log.e(TAG, "error disabling DAC", e);
+//                            }
                         }
                     }
 
